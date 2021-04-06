@@ -7,7 +7,8 @@ pipeline {
             steps {
                 sh '''
                     pwd
-                    ./mvnw package'
+                    ls
+                    ./mvnw package
                     java -jar target/*.jar
                     '''
             }
