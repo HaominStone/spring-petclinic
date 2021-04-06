@@ -15,7 +15,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh '''
-                    java -jar target/*.jar --server.port=8081
+                    java -jar target/*.jar --server.port=9000
                 '''
             }
         }
