@@ -9,7 +9,7 @@ pipeline {
                     pwd
                     ls
                     ./mvnw package
-                    java -jar target/*.jar
+                    java -jar target/*.jar --server.port=8081
                     '''
             }
         }
