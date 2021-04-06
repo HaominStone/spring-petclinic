@@ -1,8 +1,7 @@
 pipeline {
-    agent {
-        node {
-            label 'pet3'
-        }
+    agent any
+    tools {
+        jdk 'jdk8'
     }
 
     stages {
