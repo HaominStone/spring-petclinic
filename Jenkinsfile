@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                    cd spring-petclinic
+                    pwd
                     ./mvnw package'
                     java -jar target/*.jar
                     '''
