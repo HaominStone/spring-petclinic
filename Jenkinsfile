@@ -1,4 +1,10 @@
 pipeline {
+    agent {
+        node {
+            label 'pet3'
+        }
+    }
+
     stages {
         stage('build') {
             steps {
